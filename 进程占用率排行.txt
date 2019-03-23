@@ -1,0 +1,5 @@
+1、安装
+sudo apt intall htop
+
+2、查看
+top

@@ -1,0 +1,3 @@
+安装indicator-sysmonitor就好了
+https://github.com/fossfreedom/indicator-sysmonitor
+https://blog.csdn.net/tecn14/article/details/24489031
