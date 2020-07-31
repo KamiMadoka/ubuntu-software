@@ -1,0 +1,12 @@
+sudo apt install ntpdate
+
+ntpdate cn.pool.ntp.org
+
+# 设置定时任务
+vi /etc/corntab
+
+# 每天5点10分 更新时间 并 同步硬件时钟
+10 5    * * *   root    ntpdate cn.pool.ntp.org ; hwclock --systohc
+
+# 强制保存只读文件（下次切root用户试试）
+w !sudo tee %
