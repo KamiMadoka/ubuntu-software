@@ -1,0 +1,26 @@
+1、下载
+
+2、解压
+unzip YaHei.Consolas.1.12.zip
+
+3、建文件夹
+sudo mkdir -p /usr/share/fonts/consolas
+
+4、拷贝至文件夹
+sudo cp YaHei.Consolas.1.12.ttf /usr/share/fonts/consolas/
+
+5、设置权限
+sudo chmod 644 /usr/share/fonts/consolas/YaHei.Consolas.1.12.ttf
+
+6、进入文件夹
+cd /usr/share/fonts/consolas
+
+7、启用
+sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
+
+8、app商店安装Unity Tweak Tool进行设置。
+报错schema com.canonical.Unity.ApplicationsLens not installed
+sudo apt-get install unity-lens-applications 
+sudo apt-get install unity-lens-files
+
+unity-tweak-tool打开
